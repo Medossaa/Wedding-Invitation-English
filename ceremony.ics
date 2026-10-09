@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mohamed Mayada//Marriage Ceremony//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:mohamed-mayada-20261204@invitation.local
+DTSTAMP:20261006T220000Z
+DTSTART:20261204T140000Z
+SUMMARY:عقد قران محمد وميادة
+LOCATION:مسجد الشرطة - التجمع الخامس - القاهر
+ ة الجديدة
+DESCRIPTION:الجمعة ٤ ديسمبر ٢٠٢٦ الساعة الراب
+ عة عصرًا بتوقيت القاهرة.
+END:VEVENT
+END:VCALENDAR

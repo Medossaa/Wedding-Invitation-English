@@ -1,0 +1,108 @@
+/* Responsive composition: phone, tablet, desktop and short landscape screens. */
+:root{--muted:#756481;--page-width:1120px}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:24px}
+body{min-width:280px;background:radial-gradient(ellipse at top,#eee7f5,transparent 65%),#faf8fc}
+main{max-width:var(--page-width);margin-inline:auto}
+main>section,footer{min-width:0}
+.garden-cover{padding:24px;background:radial-gradient(ellipse at 15% 20%,#e8f1fa,transparent 55%),radial-gradient(ellipse at 85% 75%,#e2d6ec,transparent 55%),#f6f2f9}
+.garden-stage{width:min(640px,100%);height:calc(100svh - 48px);max-height:900px;border-radius:22px;background:url('floral-garden.webp') center/cover;box-shadow:0 24px 70px #59426926,0 0 0 1px #fff9}
+.garden-panel{background:none}
+.garden-letter{top:29%;left:12%;width:76%;gap:clamp(6px,1.5svh,14px)}
+.garden-basmala{font-size:clamp(16px,2.3svh,21px)}
+.garden-kicker{font-size:clamp(14px,1.9svh,17px)}
+.garden-names{font-size:clamp(36px,5.8svh,58px);line-height:1.5}
+.garden-names span{font-size:.58em}
+.satin-band{top:60%}
+.garden-stage .ribbon-bow{top:51%;left:21%;width:58%;max-height:36%;object-fit:contain}
+.couple-portrait{padding:32px 24px 44px}
+.couple-portrait figure{width:100%;max-width:420px;margin-inline:auto}
+.couple-portrait img{width:100%;height:auto;object-fit:contain;border-radius:24px}
+.couple-portrait figcaption{font-size:clamp(24px,3.5vw,31px);line-height:1.8;margin:18px 0 0}
+html[lang=ar] .hero{width:100%;max-width:680px;min-height:0;padding:clamp(70px,14vw,140px) clamp(20px,5vw,42px);margin-inline:auto}
+.hero-copy{width:100%;max-width:420px;padding:40px 24px 32px;border-radius:210px 210px 20px 20px}
+html[lang=ar] .hero h1{font-size:clamp(52px,8vw,68px);line-height:1.35;margin:24px 0 14px}
+html[lang=ar] .eyebrow{font-size:15px}
+html[lang=ar] .english-names{font-size:16px;line-height:1.85}
+html[lang=ar] .hero .intro{font-size:17px;line-height:1.95;padding:0;margin:18px auto 24px}
+.date-strip{max-width:100%;padding:12px 16px;gap:12px}
+html[lang=ar] .date-strip{font-size:15px}
+html[lang=ar] .date-strip strong{font-size:40px;padding-inline:16px}
+.time{margin:22px 0}
+.scroll{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px}
+html[lang=ar] .quote{width:100%;max-width:850px;padding:clamp(48px,7vw,80px) clamp(22px,5vw,48px)}
+html[lang=ar] .quote p{font-size:clamp(23px,3vw,30px);line-height:2.15;max-width:730px}
+.details{width:100%;max-width:960px;padding:32px clamp(20px,4vw,42px) 72px}
+html[lang=ar] h2{font-size:clamp(32px,4vw,43px);line-height:1.65;margin:12px 0 30px}
+.event{gap:36px;padding:36px;border-radius:24px}
+.event-date{flex-shrink:0;min-width:120px}
+.event-copy{flex:1;min-width:0;padding-inline-start:32px}
+html[lang=ar] h3{font-size:clamp(31px,4vw,38px);line-height:1.6;margin:8px 0}
+html[lang=ar] .event-copy>p{font-size:16px;line-height:1.9}
+.actions{gap:14px;margin-top:24px}
+html[lang=ar] .actions a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;font-size:15px;line-height:1.6}
+.venue-map{margin-top:30px}
+.venue-map iframe{height:clamp(260px,35vw,380px)}
+.count-section{padding:60px 20px 72px;border-radius:28px;margin-inline:24px}
+.countdown{gap:14px;max-width:570px;margin-inline:auto}
+.countdown div{width:112px;min-width:0;padding:22px 8px 18px}
+html[lang=ar] .countdown strong{font-size:clamp(30px,4vw,48px)}
+.countdown b{font-size:24px}
+footer{padding:60px 24px 36px}
+.closing{font-size:clamp(28px,4vw,35px);line-height:1.8;margin:0 0 24px}
+footer>a{display:inline-flex;min-height:44px;align-items:center;padding:8px 16px}
+.music-toggle{top:max(16px,env(safe-area-inset-top));left:max(16px,env(safe-area-inset-left));width:46px;height:46px}
+.reveal{transform:none;transition:opacity .35s ease}
+@media(min-width:960px){
+ main{display:grid;grid-template-columns:1fr 1fr;padding:40px 32px 0;gap:0 36px}
+ main>section,footer{grid-column:1/-1}
+ .couple-portrait{grid-column:1;padding:24px 0 28px;display:flex;align-items:center;justify-content:center;border-radius:28px}
+ .couple-portrait figure{max-width:365px}
+ .couple-portrait img{width:auto;max-width:100%;max-height:700px;margin-inline:auto}
+ html[lang=ar] .hero{grid-column:2;padding:70px 28px;border-radius:28px;display:grid;place-items:center}
+ .hero-copy{padding:38px 20px 28px}
+ .count-section{margin-inline:0}
+}
+@media(max-width:650px){
+ .garden-cover{padding:0}
+ .garden-stage{width:100%;height:100svh;max-height:none;border-radius:0}
+ .garden-letter{left:13%;width:74%;top:29%;gap:10px}
+ .garden-names{font-size:clamp(35px,10vw,46px)}
+ .garden-stage .ribbon-bow{width:64%;left:18%;top:52%}
+ .couple-portrait{padding:20px 20px 32px}
+ .couple-portrait figure{max-width:360px}
+ html[lang=ar] .hero{padding:82px 24px}
+ .hero-copy{padding:34px 18px 28px}
+ html[lang=ar] .hero h1{font-size:58px}
+ .event{flex-direction:column;text-align:center;gap:24px;padding:28px 20px}
+ .event-date{flex-direction:row;justify-content:center;gap:18px;width:100%;min-width:0;padding:12px 18px}
+ html[lang=ar] .event-date strong{font-size:54px}
+ .event-copy{border:0;padding:0;width:100%}
+ .actions{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+ html[lang=ar] .actions a{padding:12px 8px;font-size:14px}
+ .details{padding:28px 20px 60px}
+ .count-section{margin-inline:14px;padding:48px 14px 56px;border-radius:22px}
+ .countdown{gap:6px}
+ .countdown div{flex:1;width:auto;padding:18px 3px 14px;border-radius:14px}
+ .countdown b{font-size:18px}
+ html[lang=ar] .countdown strong{font-size:clamp(25px,7vw,34px)}
+ html[lang=ar] .countdown span{font-size:13px}
+}
+@media(max-width:360px){
+ .couple-portrait,.details{padding-inline:14px}
+ html[lang=ar] .hero{padding:68px 16px}
+ .hero-copy{padding-inline:14px}
+ html[lang=ar] .hero h1{font-size:52px}
+ .date-strip{gap:8px;padding-inline:10px}
+ html[lang=ar] .date-strip{font-size:14px}
+ html[lang=ar] .date-strip strong{font-size:34px;padding-inline:10px}
+ .actions{grid-template-columns:1fr}
+}
+@media(max-height:520px) and (orientation:landscape){
+ .garden-cover{padding:12px}
+ .garden-stage{height:calc(100svh - 24px);width:min(740px,100%);border-radius:18px;background-position:center 42%}
+ .garden-letter{top:15%;left:10%;width:80%;gap:3px}
+ .garden-basmala{font-size:15px}.garden-kicker{font-size:13px}.garden-names{font-size:34px}
+ .satin-band{top:65%;height:18px}
+ .garden-stage .ribbon-bow{top:48%;width:32%;left:34%;max-height:49%}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transition:none}.garden-stage *{transition:none}}
